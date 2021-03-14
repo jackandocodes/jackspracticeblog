@@ -8,6 +8,13 @@
 
     <style>
         
+        .fullcard
+        {border: 1px solid #ccc;
+        border-radius: 30px; 
+        margin: 10px 5px;
+        padding: 4px;
+        width: 100%;} 
+        
         h2{color:blue}
 
         p{font-size:20px;font-family:'Courier New', Courier, monospace}
@@ -16,7 +23,9 @@
 
         main{font-family:'Shippori Mincho B1', serif;}
 
-        a{font-family:'Shippori Mincho B1', serif;}
+        a{font-family:'Shippori Mincho B1', serif;color:blue;}
+
+        a:hover{color:green;}
         
         .pink-text{color:rgb(255, 116, 106)}
 
@@ -35,12 +44,41 @@
         .backgroundT {background-color: yellow;}
         .box {text-align: center;}
         .center { margin-left: 10%; margin-right: auto;}
+        .justy {text-align: justify;}
 
         #pinkBack {background-color: thistle;}
         #tealBack {background-color: teal;}
         #Other {background-color: wheat;}
 
         .spacebetween {padding:50px;}
+
+        #boxshadow {box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 10px 10px 20px rgba(0,0,0,0.23);}
+
+        #navbar {
+width: 100%;
+background-color: #ffffff;
+position: fixed;
+margin-top:15%;
+
+}
+nav ul {
+margin: 0px;
+padding: 10px 0px 5px 0px;
+}
+nav li {
+display: inline;
+margin-right: 20px;
+margin-top: 0%;
+}
+a {
+text-decoration: none;
+}
+
+        /*  offset-x (how far to push the shadow horizontally from the element),
+            offset-y (how far to push the shadow vertically from the element),
+            blur-radius,
+            spread-radius 
+            color, in that order. */
 
     </style>
     
@@ -63,7 +101,7 @@ class="thin-purple-border spacebetween">
 <!--YOU NEED BETTER BODY ORGANIZATION-->
 
 <div>
-    <h1>LEARNING TO PROGRAM</h1>
+    <h1 style= "position: relative; top:-25px">LEARNING TO PROGRAM</h1>
     <main>How To Program Your Own Website</main>   
 
 <header>
@@ -78,11 +116,18 @@ class="thin-purple-border spacebetween">
 
 
     <p style="color:red"> (Photo Booth Photos from 3/11/21-3/12/21) </p>
-<h2>Coding is CHALLENGING</h2>
-    <p>I'm following TOP and FreeCodeCamp. I'm using VSCode with the Live Server extension to practice my skills. Eventually I will <a href="https://sive.rs">create the code for my personal blog</a>.</p>
+<h2 style="opacity:.5"; >Coding is CHALLENGING</h2>
+    <p>I'm following <strong>TOP</strong> and <strong>FreeCodeCamp</strong> I'm using <strong>VSCODE</strong> with the Live Server extension to practice my skills. Eventually I will <a href="https://sive.rs">try to mimick this site's design on my personal blog</a>.</p>
     <p>Here is a <a _blank href="https://www.grantando.com" target="_blank">link to my brothers website.</a></p>
 <h3 class="background box">H3 Center Alignment</h3>
-<h4>What about H4?</h4>
+
+<div style="background-color: rgba(45, 45, 45, 0.1); text-transform: uppercase"; class="fullcard" id=boxshadow>
+
+    <h4 style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">Let's Create a Box of Text</h4>
+    <p class="justy" style= "text-align: center";>Today is the 4th day I've spent learning how to program. Sometimes <u>words that are underlined</u> can be confused for hyperlinks.</p>
+
+</div>
+
 <h5 class="pink-text"> H5 HEADER SIZE !!!! </h5>
 <h6>H6 IS SO SMALL</h6>
 
@@ -144,7 +189,7 @@ class="thin-purple-border spacebetween">
 
 </div>
 
-<h1>H2 COLORS
+<h1 style="text-align:center;"> <s>C O L O R S</s> 
 <h2 class="backgroundR" style="color:white;">C
 <h2 class="backgroundO" style="color:white;">O
 <h2 class="backgroundT" style="color:rgb(209, 209, 209);">L
@@ -180,5 +225,13 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
 </iframe>
 
 </body>
+
+<hr>
+
+<form style="position: relative; top: 10px; text-align:center; border-color:yellow">
+    <input action="#" type="search" placeholder="the meaning of life" style="text-align:center;">
+    <button type="submit">Search</button>
+<!--maybe make this a Jeopardy style secret search bar with a "what is" input requirment to access-->
+</form>
 
 </html>
